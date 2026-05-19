@@ -1,4 +1,4 @@
 FROM n8nio/n8n:latest
 USER root
-RUN apk update && apk add --no-cache graphicsmagick
+RUN apt-get update && apt-get install -y graphicsmagick
 USER node
